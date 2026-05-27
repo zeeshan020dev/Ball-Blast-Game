@@ -5,16 +5,11 @@
 </p>
 
 <p align="center">
-	<!-- Tech -->
 	<img src="https://img.shields.io/badge/Unity-Game%20Engine-000000?logo=unity&logoColor=white" alt="Unity" />
 	<img src="https://img.shields.io/badge/C%23-Language-239120?logo=csharp&logoColor=white" alt="C#" />
-	
-	<!-- Platform support -->
 	<img src="https://img.shields.io/badge/Platforms-Windows%20%7C%20macOS%20%7C%20Linux-0078D6?logo=windows&logoColor=white" alt="Platforms: Windows/macOS/Linux" />
 	<img src="https://img.shields.io/badge/Platforms-Android%20%7C%20iOS-3DDC84?logo=android&logoColor=white" alt="Platforms: Android/iOS" />
 	<img src="https://img.shields.io/badge/Platforms-WebGL-FF6F00?logo=googlechrome&logoColor=white" alt="Platforms: WebGL" />
-
-	<!-- License / repo stats -->
 	<img src="https://img.shields.io/github/license/zeeshan020dev/Ball-Blast-Game?label=License" alt="License" />
 	<img src="https://img.shields.io/github/stars/zeeshan020dev/Ball-Blast-Game?style=flat&label=Stars" alt="GitHub stars" />
 	<img src="https://img.shields.io/github/forks/zeeshan020dev/Ball-Blast-Game?style=flat&label=Forks" alt="GitHub forks" />
