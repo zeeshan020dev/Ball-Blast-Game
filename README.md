@@ -3,150 +3,180 @@
 ![Unity](https://img.shields.io/badge/Unity-3D%20Arcade-000000?logo=unity&logoColor=white)
 ![C#](https://img.shields.io/badge/Language-C%23-239120?logo=csharp&logoColor=white)
 ![License](https://img.shields.io/badge/License-MIT-blue.svg)
+![Open Source](https://img.shields.io/badge/Open%20Source-Yes-success)
 ![Status](https://img.shields.io/badge/Status-Portfolio%20Project-success)
+
+> A compact Unity arcade shooter where you dodge, shoot, survive, and push for a higher score.
+
+## Table of Contents
+
+- [Project Overview](#-project-overview)
+- [Features](#-features)
+- [Gameplay Mechanics](#-gameplay-mechanics)
+- [Controls](#-controls)
+- [Technologies Used](#-technologies-used)
+- [Unity Version Compatibility](#-unity-version-compatibility)
+- [Folder Structure](#-folder-structure)
+- [Installation and Setup](#-installation-and-setup)
+- [How to Play](#-how-to-play)
+- [Scripts and Modules](#-scripts-and-modules)
+- [Screenshots](#-screenshots)
+- [Future Improvements](#-future-improvements)
+- [Contribution Guidelines](#-contribution-guidelines)
+- [License](#-license)
+- [Author](#-author)
 
 ## 🎮 Project Overview
 
-**Ball Blast Game** is a Unity-powered arcade shooter inspired by the classic ball-blast formula: move horizontally, fire projectiles, destroy incoming enemies, and survive as long as possible while your score climbs. The project combines simple controls with a clear risk/reward loop, lightweight UI feedback, collision-driven gameplay, and a pause/start menu flow suitable for a polished portfolio showcase.
+**Ball Blast Game** is a Unity-based arcade project inspired by the ball-blast genre. The core loop is simple and responsive: move horizontally, fire projectiles, eliminate enemies, and stay alive as long as possible while the score climbs. The project is intentionally lean, making it a strong open-source portfolio example for gameplay scripting, scene setup, prefab workflows, and UI-driven game state management.
 
-The repository is organized as a compact Unity project with a single playable scene, reusable prefabs, and a small set of focused C# scripts that control movement, spawning, scoring, health, and menu flow.
+The repository contains a single playable scene, reusable prefabs, TextMesh Pro UI, sound and particle feedback, and a small set of focused scripts that separate responsibility cleanly across player movement, enemy spawning, collision handling, scoring, health, and menus.
 
 ## ✨ Features
 
-- Fast, pick-up-and-play arcade gameplay.
-- Horizontal player movement with screen-bound clamping.
-- Projectile firing with audio feedback.
-- Enemy spawning over time with randomized X positions.
-- Collision-based scoring and health loss.
+- Fast arcade gameplay with immediate restart/pause flow.
+- Horizontal movement constrained to the arena bounds.
+- Projectile spawning with audio feedback.
+- Enemy spawning on a timer at randomized X positions.
+- Score and health tracking through a central game manager.
 - Game over state with time freeze.
-- Start menu, pause menu, restart, and quit flow.
-- TextMesh Pro-driven score and health UI.
-- Particle and sound effects for enemy hits.
+- Start menu and pause menu UI.
+- Explosion particles and hit sounds for impact feedback.
+- TextMesh Pro UI for crisp in-game text rendering.
 
 ## 🕹️ Gameplay Mechanics
 
 | Mechanic | Behavior |
 | --- | --- |
-| Movement | The player moves left and right using horizontal input and is clamped within the visible play area. |
+| Movement | The player moves left and right with horizontal input and is clamped inside the play area. |
 | Shooting | Press **Space** to spawn a projectile from the player position. |
-| Enemies | Enemies spawn repeatedly at random X positions after a short delay. |
-| Collision | Projectiles destroy enemies, while enemies touching the player reduce health. |
-| Scoring | Each successful enemy hit increases the score. |
-| Health | The player starts with 3 health; reaching 0 triggers game over. |
-| Menus | The game starts paused on the menu, then supports pause/resume and restart. |
+| Enemies | Enemies spawn repeatedly after a short delay at random X positions. |
+| Collision | Projectiles destroy enemies, and enemies that reach the player reduce health. |
+| Scoring | Destroying enemies adds points to the score. |
+| Health | The player begins with 3 health; reaching zero triggers game over. |
+| Menus | The game opens on the start menu and supports pause, resume, restart, and quit actions. |
+
+## 🎯 Controls
+
+| Input | Action |
+| --- | --- |
+| A / D or Left / Right | Move the player horizontally |
+| Space | Fire a projectile |
+| Escape | Pause or resume the game |
+| Mouse / UI buttons | Start, restart, resume, or quit through the menus |
 
 ## 🧰 Technologies Used
 
 | Technology | Purpose |
 | --- | --- |
-| Unity | Game engine and scene management |
-| C# | Gameplay, UI, and menu scripting |
+| Unity | Game engine, scene management, physics, and prefab workflow |
+| C# | Gameplay, UI, input, and menu logic |
 | TextMesh Pro | Score, health, and menu text rendering |
 | Unity Physics | Trigger-based collision detection |
-| Particle System | Enemy impact / explosion feedback |
+| Particle System | Explosion and hit feedback |
 | AudioSource / AudioClip | Shooting and hit sound effects |
-| SceneManager | Restarting and reloading the active scene |
-| Unity Input Manager | Current player movement and firing controls |
-| Input System asset | Included in the repository as `InputSystem_Actions.inputactions` |
+| SceneManager | Reloading the active scene for restart flow |
+| Unity Input Manager | Runtime movement and firing controls used by the scripts |
+| Input System asset | Included in the repository for future input expansion |
 
 ## 🧩 Unity Version Compatibility
 
-The repository snapshot does not include `ProjectSettings/ProjectVersion.txt`, so the exact editor version cannot be verified from source alone.
+The repository snapshot does not include `ProjectSettings/ProjectVersion.txt`, so the exact editor version cannot be confirmed from the source tree alone.
 
 | Compatibility | Notes |
 | --- | --- |
 | Recommended | Unity 2021.3 LTS or newer |
 | Expected support | Recent Unity LTS releases with TextMesh Pro and standard 3D physics |
-| Notes | The project uses classic input in code and includes TextMesh Pro and Input System assets |
+| Notes | The current scripts use classic input methods, while the repo also includes an Input System action asset |
 
 ## 📁 Folder Structure
 
 | Path | Description |
 | --- | --- |
-| `EnemySpawner.cs` and other root scripts | Core gameplay, movement, collision, UI, and menu logic |
 | `Scenes/` | Main playable scene (`SampleScene.unity`) |
-| `Prefabs/` | Reusable prefabs for the enemy, projectile, and explosion effect |
-| `Materials/` | Materials used by the game objects and environment |
-| `2D Space Backgrounds/` | Background art assets for the scene |
-| `Sprites/` | Sprite assets used by the project |
+| `Prefabs/` | Enemy, projectile, and explosion prefabs |
+| `Materials/` | Materials for the game objects and environment |
+| `2D Space Backgrounds/` | Background art assets used for the scene look |
+| `Sprites/` | Sprite assets for visual elements |
 | `TextMesh Pro/` | TMP fonts, resources, shaders, and settings |
+| `EnemySpawner.cs` and other root scripts | Core gameplay, collision, UI, and menu logic |
 | `InputSystem_Actions.inputactions` | Input System action asset included with the project |
-| `_Recovery/` | Unity recovery file generated by the editor |
+| `_Recovery/` | Unity recovery data generated by the editor |
 
-## 🚀 Installation & Setup
+## 🚀 Installation and Setup
 
 1. Clone or download the repository.
 2. Open the project folder in **Unity Hub**.
-3. Use **Unity 2021.3 LTS or a newer compatible Unity version**.
+3. Use **Unity 2021.3 LTS or a newer compatible version**.
 4. Open `Scenes/SampleScene.unity`.
-5. If Unity prompts you to import packages, allow the import for **TextMesh Pro** and any required input-related packages.
-6. Press **Play** to run the game.
+5. Allow Unity to import TextMesh Pro and any required package dependencies.
+6. Press **Play** to launch the game.
 
-If the UI references are missing after opening the scene, verify that the `GameManager`, `MenuManager`, `PlayerMovement`, and `EnemySpawner` objects still have their inspector fields assigned.
+If references are missing after opening the scene, check the inspector assignments for `GameManager`, `MenuManager`, `PlayerMovement`, and `EnemySpawner`.
 
 ## ▶️ How to Play
 
 1. Click **Start** on the main menu.
-2. Move left and right using the horizontal controls.
+2. Move left and right to dodge incoming enemies.
 3. Press **Space** to fire projectiles.
 4. Destroy enemies before they reach you.
-5. Watch your score and health in the HUD.
+5. Watch score and health in the HUD.
 6. Press **Escape** to pause or resume.
-7. If health reaches zero, the game shows **Game Over** and freezes time.
+7. When health reaches zero, the game shows **Game Over** and pauses time.
 
-## 🧠 Scripts / Modules Explanation
+## 🧠 Scripts and Modules
 
 | Script | Responsibility |
 | --- | --- |
-| `PlayerMovement.cs` | Reads horizontal input, constrains the player to the play area, and fires bullets with sound feedback. |
-| `MoveForward.cs` | Moves the projectile forward each frame. |
-| `EnemySpawner.cs` | Spawns enemy prefabs at random X positions on a timer. |
-| `Enemy.cs` | Moves enemies toward the player and applies damage when the player is hit. |
-| `DestroyOnContact.cs` | Alternate hit-response controller that plays explosion/audio effects and awards score on projectile contact. |
-| `GameManager.cs` | Owns score and health state, updates the UI, and triggers game over. |
-| `MenuManager.cs` | Controls the start menu, pause menu, restart, quit flow, and time scale. |
-| `HealthSystem.cs` | Lightweight health helper kept in the repository; useful as a reusable or legacy health module. |
-
-## 🔮 Future Improvements
-
-- Add difficulty scaling over time.
-- Introduce enemy variants with different health and movement patterns.
-- Add power-ups such as spread shots, shields, or rapid fire.
-- Save and display a high score.
-- Improve visual polish with screen shake, hit flash, and UI animations.
-- Add mobile-friendly touch controls.
-- Expand the sound mix with layered music and hit variations.
-- Add a proper main menu scene and options menu.
+| `PlayerMovement.cs` | Reads horizontal input, clamps the player to the arena bounds, spawns bullets, and plays shoot audio. |
+| `MoveForward.cs` | Moves projectile objects forward each frame. |
+| `EnemySpawner.cs` | Instantiates enemy prefabs at random X positions on a repeating timer. |
+| `Enemy.cs` | Moves enemies toward the player and applies score/damage handling on collision. |
+| `DestroyOnContact.cs` | Alternate hit-response script that plays explosion and sound effects when a projectile collides. |
+| `GameManager.cs` | Tracks score and health, updates the HUD, and triggers the game over state. |
+| `MenuManager.cs` | Handles start, pause, resume, restart, and quit behavior through the UI. |
+| `HealthSystem.cs` | Lightweight health helper kept in the project for reusable or legacy health logic. |
 
 ## 📸 Screenshots
 
-Add gameplay images here to complete the portfolio presentation.
+Add screenshots here to complete the repository presentation.
 
-| Screenshot | Placeholder |
+| View | Placeholder |
 | --- | --- |
-| Main menu | Add a screenshot of the start menu here |
-| Gameplay | Add a screenshot of active gameplay here |
-| Game over | Add a screenshot of the game over state here |
+| Main Menu | Add a screenshot of the start screen |
+| Gameplay | Add a screenshot of active gameplay |
+| Game Over | Add a screenshot of the game over state |
+
+## 🔮 Future Improvements
+
+- Add progressive difficulty scaling.
+- Introduce multiple enemy types with distinct behavior.
+- Add power-ups such as spread shot, shield, or rapid fire.
+- Store and display a high score.
+- Improve visual polish with hit flash, screen shake, and transitions.
+- Add mobile-friendly touch controls.
+- Expand audio with background music and layered sound effects.
+- Create separate menu and gameplay scenes for a more production-ready flow.
 
 ## 🤝 Contribution Guidelines
 
-Contributions are welcome. If you want to improve the project:
+Contributions are welcome. To keep the project clean and easy to review:
 
 - Fork the repository and create a feature branch.
-- Keep changes focused and readable.
+- Keep changes scoped and readable.
 - Test gameplay changes inside Unity before opening a pull request.
-- Update this README if you add new systems or controls.
-- Prefer small, reviewable commits.
+- Update the README if controls, systems, or setup steps change.
+- Prefer small, focused commits.
 
 ## 📜 License
 
-This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) file for full details.
+This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) file for the full text.
 
 ## 👤 Author
 
 **Muhammad Zeeshan Islam**
 
-- GitHub portfolio project
+- Unity game developer portfolio project
 - Built with Unity and C#
 
 
