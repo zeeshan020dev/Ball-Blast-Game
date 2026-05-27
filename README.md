@@ -1,12 +1,23 @@
 # Ball Blast Game
 
-![Unity](https://img.shields.io/badge/Unity-3D%20Arcade-000000?logo=unity&logoColor=white)
-![C#](https://img.shields.io/badge/Language-C%23-239120?logo=csharp&logoColor=white)
-![License](https://img.shields.io/badge/License-MIT-blue.svg)
-![Open Source](https://img.shields.io/badge/Open%20Source-Yes-success)
-![Status](https://img.shields.io/badge/Status-Portfolio%20Project-success)
+<p align="center">
+	<img src="https://img.shields.io/badge/Unity-3D%20Arcade-000000?logo=unity&logoColor=white" alt="Unity badge" />
+	<img src="https://img.shields.io/badge/C%23-Gameplay%20Logic-239120?logo=csharp&logoColor=white" alt="C# badge" />
+	<img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="MIT license badge" />
+	<img src="https://img.shields.io/badge/Open%20Source-Yes-success" alt="Open source badge" />
+	<img src="https://img.shields.io/badge/Status-Portfolio%20Project-success" alt="Project status badge" />
+	<img src="https://img.shields.io/badge/Engine-Unity%202021.3%2B-informational" alt="Unity engine badge" />
+</p>
 
-> A compact Unity arcade shooter where you dodge, shoot, survive, and push for a higher score.
+<p align="center">
+	<strong>A compact Unity arcade shooter where you dodge, shoot, survive, and push for a higher score.</strong>
+</p>
+
+<p align="center">
+	Built for a clean portfolio-style GitHub presentation with gameplay, UI, and scene-management systems.
+</p>
+
+---
 
 ## Table of Contents
 
