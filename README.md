@@ -5,16 +5,12 @@
 </p>
 
 <p align="center">
-	<img src="https://img.shields.io/badge/Unity-Game%20Engine-000000?logo=unity&logoColor=white" alt="Unity" />
-	<img src="https://img.shields.io/badge/C%23-Language-239120?logo=csharp&logoColor=white" alt="C#" />
-	<img src="https://img.shields.io/badge/Platforms-Windows%20%7C%20macOS%20%7C%20Linux-0078D6?logo=windows&logoColor=white" alt="Platforms: Windows/macOS/Linux" />
-	<img src="https://img.shields.io/badge/Platforms-Android%20%7C%20iOS-3DDC84?logo=android&logoColor=white" alt="Platforms: Android/iOS" />
-	<img src="https://img.shields.io/badge/Platforms-WebGL-FF6F00?logo=googlechrome&logoColor=white" alt="Platforms: WebGL" />
-	<img src="https://img.shields.io/github/license/zeeshan020dev/Ball-Blast-Game?label=License" alt="License" />
-	<img src="https://img.shields.io/github/stars/zeeshan020dev/Ball-Blast-Game?style=flat&label=Stars" alt="GitHub stars" />
-	<img src="https://img.shields.io/github/forks/zeeshan020dev/Ball-Blast-Game?style=flat&label=Forks" alt="GitHub forks" />
-	<img src="https://img.shields.io/github/issues/zeeshan020dev/Ball-Blast-Game?style=flat&label=Issues" alt="GitHub issues" />
-	<img src="https://img.shields.io/github/last-commit/zeeshan020dev/Ball-Blast-Game?style=flat&label=Last%20commit" alt="Last commit" />
+	<img src="https://img.shields.io/badge/Unity-3D%20Arcade-000000?logo=unity&logoColor=white" alt="Unity badge" />
+	<img src="https://img.shields.io/badge/C%23-Gameplay%20Logic-239120?logo=csharp&logoColor=white" alt="C# badge" />
+	<img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="MIT license badge" />
+	<img src="https://img.shields.io/badge/Open%20Source-Yes-success" alt="Open source badge" />
+	<img src="https://img.shields.io/badge/Status-Portfolio%20Project-success" alt="Project status badge" />
+	<img src="https://img.shields.io/badge/Engine-Unity%202021.3%2B-informational" alt="Unity engine badge" />
 </p>
 
 <p align="center">
@@ -22,14 +18,6 @@
 </p>
 
 ---
-
-## 🎬 Gameplay GIF
-
-<p align="center">
-	<img src="assets/gameplay.gif" alt="Gameplay GIF placeholder" width="900" />
-</p>
-
-> Replace `assets/gameplay.gif` with your actual gameplay capture to showcase movement, shooting, explosions, and the UI loop.
 
 ## 🃏 Feature Cards
 
@@ -61,9 +49,9 @@
 
 ## 🎮 Project Overview
 
-**Ball Blast Game** is a Unity-based arcade project inspired by the ball-blast genre. The core loop is simple and responsive: move horizontally, fire projectiles, eliminate enemies, and stay alive.
+**Ball Blast Game** is a Unity-based arcade project inspired by the ball-blast genre. The core loop is simple and responsive: move horizontally, fire projectiles, eliminate enemies, and stay alive as long as possible while the score climbs. The project is intentionally lean, making it a strong open-source portfolio example for gameplay scripting, scene setup, prefab workflows, and UI-driven game state management.
 
-The repository contains a single playable scene, reusable prefabs, TextMesh Pro UI, sound and particle feedback, and a small set of focused scripts that separate responsibility cleanly across gameplay, UI, and spawning.
+The repository contains a single playable scene, reusable prefabs, TextMesh Pro UI, sound and particle feedback, and a small set of focused scripts that separate responsibility cleanly across player movement, enemy spawning, collision handling, scoring, health, and menus.
 
 ## ✨ Features
 
