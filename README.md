@@ -1,4 +1,8 @@
-# Ball Blast Game
+<h1 align="center">Ball Blast Game</h1>
+
+<p align="center">
+	<strong>Arcade action, score chasing, and clean Unity gameplay systems.</strong>
+</p>
 
 <p align="center">
 	<img src="https://img.shields.io/badge/Unity-3D%20Arcade-000000?logo=unity&logoColor=white" alt="Unity badge" />
@@ -10,18 +14,32 @@
 </p>
 
 <p align="center">
-	<strong>A compact Unity arcade shooter where you dodge, shoot, survive, and push for a higher score.</strong>
-</p>
-
-<p align="center">
 	Built for a clean portfolio-style GitHub presentation with gameplay, UI, and scene-management systems.
 </p>
 
 ---
 
+## 🎬 Gameplay GIF
+
+<p align="center">
+	<img src="assets/gameplay.gif" alt="Gameplay GIF placeholder" width="900" />
+</p>
+
+> Replace `assets/gameplay.gif` with your actual gameplay capture to showcase movement, shooting, explosions, and the UI loop.
+
+## 🃏 Feature Cards
+
+| | |
+| --- | --- |
+| **🎯 Responsive Controls**<br>Horizontal movement feels immediate and is clamped inside the play area. | **🔥 Arcade Combat**<br>Fire projectiles, destroy enemies, and keep the action moving. |
+| **🧠 Clean Game Flow**<br>Start, pause, resume, restart, and game over states are managed centrally. | **💥 Hit Feedback**<br>Explosion particles and sound effects give every hit impact. |
+| **📊 Score & Health UI**<br>TextMesh Pro keeps the HUD readable and polished. | **🧩 Reusable Systems**<br>Spawner, player, projectile, and menu logic are separated into focused scripts. |
+
 ## Table of Contents
 
 - [Project Overview](#-project-overview)
+- [Gameplay GIF](#-gameplay-gif)
+- [Feature Cards](#-feature-cards)
 - [Features](#-features)
 - [Gameplay Mechanics](#-gameplay-mechanics)
 - [Controls](#-controls)
