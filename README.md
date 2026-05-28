@@ -200,6 +200,3 @@ This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) f
 <a href="https://github.com/zeeshan020dev">
   <img src="https://img.shields.io/badge/GitHub-zeeshan020dev-ffffff?style=for-the-badge&logo=github&logoColor=white&labelColor=0d1117" />
 </a>
-
-- Unity game developer portfolio project
-- Built with Unity and C#
