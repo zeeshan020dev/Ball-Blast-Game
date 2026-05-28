@@ -195,7 +195,7 @@ This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) f
 
 ## 👤 Author
 
-**Muhammad Zeeshan Islam**
+**[Muhammad Zeeshan Islam](https://github.com/zeeshan020dev)**  
 
 - Unity game developer portfolio project
 - Built with Unity and C#
