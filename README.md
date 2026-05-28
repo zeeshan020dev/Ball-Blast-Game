@@ -5,12 +5,12 @@
 </p>
 
 <p align="center">
-	<img src="https://img.shields.io/badge/Unity-3D%20Arcade-000000?logo=unity&logoColor=white" alt="Unity badge" />
-	<img src="https://img.shields.io/badge/C%23-Gameplay%20Logic-239120?logo=csharp&logoColor=white" alt="C# badge" />
-	<img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="MIT license badge" />
-	<img src="https://img.shields.io/badge/Open%20Source-Yes-success" alt="Open source badge" />
-	<img src="https://img.shields.io/badge/Status-Portfolio%20Project-success" alt="Project status badge" />
-	<img src="https://img.shields.io/badge/Engine-Unity%202021.3%2B-informational" alt="Unity engine badge" />
+  <img src="https://img.shields.io/badge/Unity-3D Arcade-ffffff?style=for-the-badge&logo=unity&logoColor=white&labelColor=0d1117" />
+  <img src="https://img.shields.io/badge/C%23-Gameplay Logic-239120?style=for-the-badge&logo=csharp&logoColor=white&labelColor=0d1117" />
+  <img src="https://img.shields.io/badge/License-MIT-00c9ff?style=for-the-badge&logo=opensourceinitiative&logoColor=white&labelColor=0d1117" />
+  <img src="https://img.shields.io/badge/Open Source-Yes-22c55e?style=for-the-badge&logo=github&logoColor=white&labelColor=0d1117" />
+  <img src="https://img.shields.io/badge/Status-Portfolio Project-22c55e?style=for-the-badge&logo=rocket&logoColor=white&labelColor=0d1117" />
+  <img src="https://img.shields.io/badge/Engine-Unity 2021.3+-ffffff?style=for-the-badge&logo=unity&logoColor=white&labelColor=0d1117" />
 </p>
 
 <p align="center">
