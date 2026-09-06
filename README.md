@@ -41,7 +41,6 @@
 - [Installation and Setup](#-installation-and-setup)
 - [How to Play](#-how-to-play)
 - [Scripts and Modules](#-scripts-and-modules)
-- [Screenshots](#-screenshots)
 - [Future Improvements](#-future-improvements)
 - [Contribution Guidelines](#-contribution-guidelines)
 - [License](#-license)
@@ -157,16 +156,6 @@ If references are missing after opening the scene, check the inspector assignmen
 | `GameManager.cs` | Tracks score and health, updates the HUD, and triggers the game over state. |
 | `MenuManager.cs` | Handles start, pause, resume, restart, and quit behavior through the UI. |
 | `HealthSystem.cs` | Lightweight health helper kept in the project for reusable or legacy health logic. |
-
-## 📸 Screenshots
-
-Add screenshots here to complete the repository presentation.
-
-| View | Placeholder |
-| --- | --- |
-| Main Menu | Add a screenshot of the start screen |
-| Gameplay | Add a screenshot of active gameplay |
-| Game Over | Add a screenshot of the game over state |
 
 ## 🔮 Future Improvements
 
