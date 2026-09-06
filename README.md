@@ -30,7 +30,6 @@
 ## Table of Contents
 
 - [Project Overview](#-project-overview)
-- [Gameplay GIF](#-gameplay-gif)
 - [Feature Cards](#-feature-cards)
 - [Features](#-features)
 - [Gameplay Mechanics](#-gameplay-mechanics)
